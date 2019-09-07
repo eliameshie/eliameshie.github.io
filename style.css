@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Lalezar|East+Sea+Dokdo|Staatliches|Covered+By+Your+Grace|Patrick+Hand+SC|Damion&display=swap');
+
+
+body {
+	overflow-x: hidden;
+	font-family: 'Lalezar', cursive;
+	color: rgb(21, 21, 29);
+	background-color: rgb(21, 21, 29) !important;  
+	opacity: 1;
+	transition: 2s opacity;
+}
+
+body:fade {
+	opacity: 0;
+	transition: none;
+}
+
+.offset:before {
+	display: block;
+	content:"";
+	height: 4.5rem;
+}
+
+.navbar {
+	color: white;
+	text-decoration: none;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	display: inline-block;
+	float: none;
+	text-align: center;
+}
+
+.navbar-nav li {
+	text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white !important;
+}
+/* Nav Hover */
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgb(198, 227, 255)!important;
+}
+
+.navbar-brand img {
+	height: 2.0rem;
+}
+
+.home-inner {
+	background-image: url(img/mounbg.jpg);
+	opacity: .5;
+}
+
+
+.caption {
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 38%;
+	z-index: 1;
+	color: white;
+	text-transform: uppercase;
+}
+
+.caption h1 {
+  font-size: 3.8rem;
+font-family: 'East Sea Dokdo', cursive;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+
+
+
+/* Type Writer Effect */
+
+.output {
+	text-align: center;
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 46%;
+	z-index: 1;
+  	font-family: 'Staatliches', sans-serif;
+  	color: white;
+}
+
+.output h2 {
+  font-size: 20px;
+}
+
+/* Cursor Styling */
+.cursor::after {
+  content: '';
+  display: inline-block;
+  margin-left: 2px;
+  background-color: white;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+h2.cursor::after {
+  height: 20px;
+  width: 2px;
+}
+
+p.cursor::after {
+  height: 13px;
+  width: 6px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* Footer Section */
+
+footer {
+  color: white;
+  padding: 2rem 0 2rem;
+  margin-top: 1rem;
+  font-family: 'Staatliches', cursive;  
+  letter-spacing: .2rem;
+}
+
+footer img {
+  height: 2.5rem;
+  margin: .2rem 0;
+
+}
+
+footer a {
+  color: white;
+}
+
+
+
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+  margin: .2rem .5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover {
+	color: rgb(198, 227, 255)!important;
+}
+hr.socket{
+  width: 100%;
+  border-top: .2rem solid white;
+  margin-top: .5rem;
+}
+
+
+/* Media Query */
+
+@media (max-width: 767px) {
+
+.output {
+	text-align: center;
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 43%;
+	z-index: 1;
+  	font-family: 'Staatliches', sans-serif;
+  	color: white;
+  }
+
+ .caption h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white !important;
+}
+/* Nav Hover */
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgb(198, 227, 255)!important;
+}
+
+}
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
