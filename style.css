@@ -176,7 +176,7 @@ hr.socket{
 	width: 100%;
 	max-width: 100%;
 	position: absolute;
-	top: 46%;
+	top: 44%;
 	z-index: 1;
   	font-family: 'Staatliches', sans-serif;
   	color: white;
@@ -201,7 +201,19 @@ hr.socket{
 
 }
 
+@media (max-width: 575px) {
+.output {
+	text-align: center;
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 49%;
+	z-index: 1;
+  	font-family: 'Staatliches', sans-serif;
+  	color: white;
+  }
 
+}
 
 /*============ BOOTSTRAP BREAK POINTS:
 
