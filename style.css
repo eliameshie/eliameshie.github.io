@@ -49,6 +49,23 @@ body:fade {
 	height: 2.0rem;
 }
 
+.container img {
+  height: 25%;
+  width: 25%;
+  border-radius: 50%;
+  float: left;
+}
+
+.jumbotron p {
+  text-align: center;
+}
+
+.jumbotron h2 {
+  font-size: 3.8rem;
+  font-family: 'East Sea Dokdo', cursive;
+  text-align: center;
+}
+
 .home-inner {
 	background-image: url(img/mounbg.jpg);
 	opacity: .5;
