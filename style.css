@@ -42,7 +42,7 @@ body:fade {
 /* Nav Hover */
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: rgb(198, 227, 255)!important;
+  color: #cd4dcc!important;
 }
 
 .navbar-brand img {
@@ -61,8 +61,8 @@ body:fade {
 }
 
 .jumbotron h2 {
-  font-size: 3.8rem;
-  font-family: 'East Sea Dokdo', cursive;
+  font-size: 2.8rem;
+  font-family: 'Staatliches', sans-serif;
   text-align: center;
 }
 
@@ -84,12 +84,102 @@ body:fade {
 
 .caption h1 {
   font-size: 3.8rem;
-font-family: 'East Sea Dokdo', cursive;
+  font-family: 'Staatliches', sans-serif;
   font-weight: 700;
   letter-spacing: .3rem;
   text-shadow: .1rem .1rem .8rem black;
   padding-bottom: 1rem;
 }
+
+/* PROJECT SECTION */
+
+.projects {
+  float: left;
+  width: 33.3%;
+  padding: 5rem;
+  transition: .5s linear;
+  height: 100%;
+}
+
+
+.projects-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.project-header {
+  font-family: 'Staatliches', sans-serif;
+  color: white;
+  font-size: 2.2rem;
+  position: relative;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+
+.project-title {
+  font-family: 'Staatliches', sans-serif;
+  color: #cd4dcc;
+  font-size: 1.9rem;
+  display: block;
+  position: relative;
+}
+
+.project-header span{
+  font-family: 'Staatliches', sans-serif;
+  color: #cd4dcc;
+  font-size: 2.2rem;
+  position: relative;
+}
+
+.project-language {
+  font-family: 'Staatliches', sans-serif;
+  color: white;
+  font-size: .8rem;
+  display: inline-block;
+  position: relative;
+}
+
+.project-caption {
+  font-family: 'Staatliches', sans-serif;
+  color: #f7beff;
+  font-size: .8rem;
+  display: inline-block;
+  position: relative;
+}
+
+.project-info {
+  font-family: 'Staatliches', sans-serif;
+  color: white;
+  font-size: 1.1rem;
+  display: block;
+  position: relative;
+}
+
+.project-btn {
+  font-size: 1.1rem;
+  padding: .3rem .9rem;
+  color: #f7beff;
+  border: #f7beff 2px solid; 
+  border-radius: 4px;
+  opacity: 1;
+  transition: 500ms;
+  width: 100%;
+  text-decoration: none;
+}
+
+.project-btn:hover {
+  background-color: #cd4dcc;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none; 
+  transition: 500ms;
+  opacity: 1;
+
+}
+
 
 
 
@@ -102,8 +192,8 @@ font-family: 'East Sea Dokdo', cursive;
 	position: absolute;
 	top: 48%;
 	z-index: 1;
-  	font-family: 'Staatliches', sans-serif;
-  	color: white;
+  font-family: 'Staatliches', sans-serif;
+  color: white;
 }
 
 .output h2 {
@@ -175,7 +265,7 @@ footer svg.svg-inline--fa {
 }
 
 footer svg.svg-inline--fa:hover {
-	color: rgb(198, 227, 255)!important;
+	color: #cd4dcc!important;
 }
 hr.socket{
   width: 100%;
@@ -183,10 +273,24 @@ hr.socket{
   margin-top: .5rem;
 }
 
+/* MEDIUM MEDIA QUERIES */
 
-/* Media Query */
+@media (max-width: 992px) {
 
-@media (max-width: 767px) {
+.projects {
+  float: left;
+  width: 100%;
+  padding: 5rem;
+  transition: .5s linear;
+}
+
+}
+
+
+
+/* SMALL MEDIA QUERIES */
+
+@media (max-width: 768px) {
 
 .output {
 	text-align: center;
@@ -195,9 +299,9 @@ hr.socket{
 	position: absolute;
 	top: 43%;
 	z-index: 1;
-  	font-family: 'Staatliches', sans-serif;
-  	color: white;
-  }
+  font-family: 'Staatliches', sans-serif;
+  color: white;
+}
 
  .caption h1 {
   font-size: 2.4rem;
@@ -208,12 +312,28 @@ hr.socket{
 }
 
 .navbar-dark .navbar-nav .nav-link {
+  background-color: rgba(21, 21, 29, 0.4);
   color: white !important;
 }
 /* Nav Hover */
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: rgb(198, 227, 255)!important;
+  color: #cd4dcc!important;
+}
+
+.projects {
+  width: 100%;
+}
+
+.output {
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+  font-family: 'Staatliches', sans-serif;
+  color: white;
 }
 
 }
@@ -226,11 +346,13 @@ hr.socket{
 	position: absolute;
 	top: 45%;
 	z-index: 1;
-  	font-family: 'Staatliches', sans-serif;
-  	color: white;
-  }
+  font-family: 'Staatliches', sans-serif;
+  color: white;
+}
 
 }
+
+
 
 /*============ BOOTSTRAP BREAK POINTS:
 
