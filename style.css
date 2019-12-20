@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lalezar|East+Sea+Dokdo|Staatliches|Covered+By+Your+Grace|Patrick+Hand+SC|Damion&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lalezar|Oswald|East+Sea+Dokdo|Staatliches|Covered+By+Your+Grace|Patrick+Hand+SC|Damion&display=swap');
 
 
 body {
@@ -255,6 +255,17 @@ footer img {
 
 footer a {
   color: white;
+}
+
+footer h2 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: .8rem;
+  text-align: center;
+}
+
+footer span {
+  color: pink;
 }
 
 
