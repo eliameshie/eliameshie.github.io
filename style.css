@@ -10,6 +10,10 @@ body {
 	transition: 2s opacity;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body:fade {
 	opacity: 0;
 	transition: none;
@@ -67,10 +71,14 @@ body:fade {
 }
 
 .home-inner {
-	background-image: url(img/mounbg.jpg);
 	opacity: .5;
 }
 
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 
 .caption {
 	width: 100%;
@@ -161,8 +169,8 @@ body:fade {
 .project-btn {
   font-size: 1.1rem;
   padding: .3rem .9rem;
-  color: #f7beff;
-  border: #f7beff 2px solid; 
+  color: #cd4dcc;
+  border: #cd4dcc 2px solid; 
   border-radius: 4px;
   opacity: 1;
   transition: 500ms;
@@ -252,6 +260,7 @@ footer img {
   margin: .2rem 0;
 
 }
+
 
 footer a {
   color: white;
