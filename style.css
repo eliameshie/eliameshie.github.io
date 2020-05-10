@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lalezar|Oswald|East+Sea+Dokdo|Staatliches|Covered+By+Your+Grace|Patrick+Hand+SC|Damion&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lalezar|Oswald|East+Sea+Dokdo|Staatliches|Covered+By+Your+Grace|Patrick+Hand+SC|Damion|Jost&display=swap');
 
 
 body {
@@ -34,6 +34,7 @@ body:fade {
 	display: inline-block;
 	float: none;
 	text-align: center;
+  z-index: 1;
 }
 
 .navbar-nav li {
@@ -46,202 +47,225 @@ body:fade {
 /* Nav Hover */
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #cd4dcc!important;
+  color: rgba(0, 255, 255, 0.6)!important;
 }
 
 .navbar-brand img {
 	height: 2.0rem;
 }
 
-.container img {
-  height: 25%;
-  width: 25%;
-  border-radius: 50%;
-  float: left;
-}
+/* HOME SECTION */
 
-.jumbotron p {
-  text-align: center;
-}
-
-.jumbotron h2 {
-  font-size: 2.8rem;
-  font-family: 'Staatliches', sans-serif;
-  text-align: center;
-}
-
-.home-inner {
-	opacity: .5;
-}
-
-.carousel {
-  width: 100%;
-  height: 100%;
+.home-section {
+  color: white;
   position: relative;
-}
-
-.caption {
-	width: 100%;
-	max-width: 100%;
-	position: absolute;
-	top: 38%;
-	z-index: 1;
-	color: white;
-	text-transform: uppercase;
-}
-
-.caption h1 {
-  font-size: 3.8rem;
-  font-family: 'Staatliches', sans-serif;
-  font-weight: 700;
-  letter-spacing: .3rem;
-  text-shadow: .1rem .1rem .8rem black;
-  padding-bottom: 1rem;
-}
-
-/* PROJECT SECTION */
-
-.projects {
-  float: left;
-  width: 33.3%;
-  padding: 5rem;
-  transition: .5s linear;
-  height: 100%;
-}
-
-
-.projects-wrapper:after {
-  content: "";
+  height: 100vh;
   display: table;
-  clear: both;
-}
-
-.project-header {
-  font-family: 'Staatliches', sans-serif;
-  color: white;
-  font-size: 2.2rem;
-  position: relative;
-  padding: 1rem;
-  text-align: center;
+  top: 10rem;
+  
 }
 
 
-
-.project-title {
-  font-family: 'Staatliches', sans-serif;
-  color: #cd4dcc;
-  font-size: 1.9rem;
-  display: block;
-  position: relative;
-}
-
-.project-header span{
-  font-family: 'Staatliches', sans-serif;
-  color: #cd4dcc;
-  font-size: 2.2rem;
-  position: relative;
-}
-
-.project-language {
-  font-family: 'Staatliches', sans-serif;
-  color: white;
-  font-size: .8rem;
+.home-header {
+  font-size: 3.4rem;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
   display: inline-block;
+  width: 15%;
   position: relative;
+  margin-left: 20%;
+  margin-right: 80%; 
 }
 
-.project-caption {
-  font-family: 'Staatliches', sans-serif;
-  color: #f7beff;
-  font-size: .8rem;
+.home-header span { color: rgba(0, 255, 255, 0.6); }
+
+
+.home-caption {
+  font-weight: 100;
+  position: relative;
+  color: rgba(255,255,255,.6);
+  margin-left: 20%;
+  margin-right: 80%; 
   display: inline-block;
-  position: relative;
-}
-
-.project-info {
-  font-family: 'Staatliches', sans-serif;
-  color: white;
-  font-size: 1.1rem;
-  display: block;
-  position: relative;
-}
-
-.project-btn {
-  font-size: 1.1rem;
-  padding: .3rem .9rem;
-  color: #cd4dcc;
-  border: #cd4dcc 2px solid; 
-  border-radius: 4px;
-  opacity: 1;
-  transition: 500ms;
   width: 100%;
-  text-decoration: none;
 }
 
-.project-btn:hover {
-  background-color: #cd4dcc;
-  color: white;
-  border-radius: 4px;
-  text-decoration: none; 
-  transition: 500ms;
-  opacity: 1;
-
-}
-
-
-
-
-/* Type Writer Effect */
-
-.output {
-	text-align: center;
-	width: 100%;
-	max-width: 100%;
-	position: absolute;
-	top: 48%;
-	z-index: 1;
-  font-family: 'Staatliches', sans-serif;
-  color: white;
-}
-
-.output h2 {
-  font-size: 20px;
-}
-
-/* Cursor Styling */
-.cursor::after {
-  content: '';
+.home-button {
+  border: white 2px solid;
+  text-align: center;
+  text-decoration: none!important;
+  position: relative;
+  width: 20%;
   display: inline-block;
-  margin-left: 2px;
-  background-color: white;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
+  margin-left: 20%;
+  margin-right: 80%;
+  color: white;
 }
 
-h2.cursor::after {
-  height: 20px;
-  width: 2px;
+.home-button:hover {
+  background-color: rgba(0,255,255,0.6); 
+  transition: .7s linear;
+  color: white;
 }
 
-p.cursor::after {
-  height: 13px;
-  width: 6px;
+
+
+
+
+/* PORTFOLIO SECTION - GFX */
+
+.portfolio-section {
+  display: block;
+  position: relative;
+  padding: 1.3rem; 
+  text-align: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50vh;
 }
 
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  49% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+.port-gfx {
+  color: white;
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  max-width: 33%;
+}
+
+
+
+.port-gfx-header {
+  font-size: 2.4rem;
+  width: 75%;
+  position: relative;
+  text-align: center;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.port-gfx-header span {
+  color: rgba(0, 255, 255, 0.6);
+}
+
+.port-gfx-desc {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  display: table; 
+}
+
+.port-gfx-button {
+  border: white 2px solid;
+  text-align: center;
+  text-decoration: none!important;
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  color: white;
+}
+
+.port-gfx-button:hover {
+  background-color: rgba(0,255,255,0.6); 
+  transition: .7s linear;
+  color: white;
+}
+
+/* PORTFOLIO SECTION - CODING */
+
+.port-code {
+  color: white;
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  max-width: 33%;
+}
+
+.port-code-header {
+  font-size: 2.4rem;
+  width: 75%;
+  position: relative;
+  text-align: center;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.port-code-header span {
+  color: rgba(0, 255, 255, 0.6);
+}
+
+.port-code-desc {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  display: table; 
+}
+
+.port-code-button {
+  border: white 2px solid;
+  text-align: center;
+  text-decoration: none!important;
+  position: relative;
+  color: white;
+  display: inline-block;
+  width: 80%;
+}
+
+.port-code-button:hover {
+  background-color: rgba(0,255,255,0.6); 
+  transition: .7s linear;
+  color: white;
+}
+
+
+/* PORTFOLIO SECTION - SPORTS */
+
+.port-sports {
+  color: white;
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  max-width: 33%;
+}
+
+.port-sports-header {
+  font-size: 2.4rem;
+  width: 75%;
+  position: relative;
+  text-align: center;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.port-sports-header span {
+  color: rgba(0, 255, 255, 0.6);
+}
+
+.port-sports-desc {
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  display: table; 
+}
+
+.port-sports-button {
+  border: white 2px solid;
+  text-align: center;
+  text-decoration: none!important;
+  position: relative;
+  color: white;
+  display: inline-block;
+  width: 80%;
+}
+
+.port-sports-button:hover {
+  background-color: rgba(0,255,255,0.6); 
+  transition: .7s linear;
+  color: white;
 }
 
 
@@ -274,7 +298,7 @@ footer h2 {
 }
 
 footer span {
-  color: pink;
+  color: rgba(0, 255, 255, 0.6);
 }
 
 
@@ -285,7 +309,7 @@ footer svg.svg-inline--fa {
 }
 
 footer svg.svg-inline--fa:hover {
-	color: #cd4dcc!important;
+	color: rgba(0, 255, 255, 0.6);!important;
 }
 hr.socket{
   width: 100%;
@@ -297,11 +321,6 @@ hr.socket{
 
 @media (max-width: 992px) {
 
-.projects {
-  float: left;
-  width: 100%;
-  padding: 5rem;
-  transition: .5s linear;
 }
 
 }
@@ -312,24 +331,6 @@ hr.socket{
 
 @media (max-width: 768px) {
 
-.output {
-	text-align: center;
-	width: 100%;
-	max-width: 100%;
-	position: absolute;
-	top: 43%;
-	z-index: 1;
-  font-family: 'Staatliches', sans-serif;
-  color: white;
-}
-
- .caption h1 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  letter-spacing: .3rem;
-  text-shadow: .1rem .1rem .8rem black;
-  padding-bottom: 1rem;
-}
 
 .navbar-dark .navbar-nav .nav-link {
   background-color: rgba(21, 21, 29, 0.4);
@@ -338,37 +339,106 @@ hr.socket{
 /* Nav Hover */
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #cd4dcc!important;
+  color: rgba(0, 255,  255, 0.6)!important;
 }
 
-.projects {
-  width: 100%;
+
+.home-header {
+  font-size: 3.4rem;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  width: 15%;
+  position: relative;
+  margin-left: 20%;
+  margin-right: 80%; 
 }
 
-.output {
-  text-align: center;
-  width: 100%;
-  max-width: 100%;
-  position: absolute;
-  top: 45%;
-  z-index: 1;
-  font-family: 'Staatliches', sans-serif;
+.home-button {
+  position: relative;
+  width: 25%;
+  display: inline-block;
+  margin-left: 20%;
+  margin-right: 80%;
   color: white;
 }
 
 }
 
 @media (max-width: 575px) {
-.output {
-	text-align: center;
-	width: 100%;
-	max-width: 100%;
-	position: absolute;
-	top: 45%;
-	z-index: 1;
-  font-family: 'Staatliches', sans-serif;
+.home-header {
+  font-size: 3.4rem;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  width: 35%;
+  position: relative;
+  margin-left: 15%;
+  margin-right: 85%; 
+}
+
+.home-button {
+  position: relative;
+  width: 25%;
+  display: inline-block;
+  margin-left: 15%;
+  margin-right: 85%;
   color: white;
 }
+
+.home-caption {
+  font-weight: 100;
+  position: relative;
+  color: rgba(255,255,255,.6);
+  margin-left: 15%;
+  margin-right: 85%; 
+  display: inline-block;
+  width: 100%;
+}
+
+
+.port-gfx {
+  color: white;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width:100%;
+  padding: 1.2rem;
+}
+
+.port-code {
+  color: white;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  padding: 1.2rem;
+}
+
+.port-sports {
+  color: white;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  padding: 1.2rem;
+  margin-left: auto;
+  margin-right: auto; 
+  justify-content: center;
+  text-align: center;
+}
+
+.portfolio-section {
+  display: block;
+  position: relative;
+  padding: 2rem; 
+  text-align: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  height:100%;
+}
+
 
 }
 
